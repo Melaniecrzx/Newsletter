@@ -43,8 +43,6 @@ submitBtn.addEventListener('click', (e) => {
         email.style.backgroundColor = '#FFE7E6'; 
         email.style.color = 'var(--red)'; 
         errorMessage.classList.remove('hidden'); 
-        emailError.classList.remove('hidden'); 
-        emailError.value = emailValue; 
     }
 });
 
