@@ -39,7 +39,8 @@ submitBtn.addEventListener('click', (e) => {
 
     } 
     else { 
-        email.style.border = '1px solid var(--red)';             email.style.backgroundColor = '#FFE7E6'; 
+        email.style.border = '1px solid var(--red)';             
+        email.style.backgroundColor = '#FFE7E6'; 
         email.style.color = 'var(--red)'; 
         errorMessage.classList.remove('hidden'); 
         emailError.classList.remove('hidden'); 
