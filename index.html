@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/images/favicon-32x32.png">
+    <script defer src="./main.js"></script> 
+</head>
+<body>
+
+    <main class="main-form">
+        <section class="section-image" >
+            <picture class="image-newsletter">
+                <source media="(max-width:767px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+                <source media="(min-width: 768px) and (max-width: 1439px)" srcset="./assets/images/illustration-sign-up-tablet.svg">
+                <source media="(min-width: 1440px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+                <img src="assets/images/illustration-sign-up-mobile.svg" alt="image-newsletter-mobile">
+            </picture>
+        </section>
+
+        <section class="section-information">
+            <div class="section-description">
+                <h1 class="title">Stay updated!</h1>
+                <p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
+                <ul class="information-list">
+                    <li class="information-list-item">Product discovery and building what matters</li>
+                    <li class="information-list-item">Measuring to ensure updates are a success</li>
+                    <li class="information-list-item">And much more!</li>
+                </ul>
+            </div>
+            <div class="section-email">
+                <div class="email-info">
+                    <div class="email-and-error">
+                        <label for="email">Email address</label>
+                        <error-message id="error-message" class="hidden">Valid email required</error-message>
+                    </div>
+                    <input type="email" id="email" name="email" placeholder="email@company.com">
+                </div>
+                <button type="submit" class="button-email-sumbmit" >Subscribe to monthly newsletter</button>
+            </div>
+        </section>
+    </main>
+
+    <main class="main-success-validation" style="display: none;">
+        <div class="success-validation">
+            <img src="assets/images/icon-success.svg" alt="icon success" class="icon-success">
+            <h1 class="title">Thanks for suscribing!</h1>
+            <p class="description">A confirmation email has been sent to <strong id="email-success"></strong>. Please open it and click the button inside to confirm your subscription.</p>
+        </div>
+        <button class="button-dissmiss">Dismiss message</button>
+    </main>
+</body>
+</html>
